@@ -695,6 +695,7 @@ nav button.active { color: var(--gold-light); border-bottom: 2px solid var(--gol
   <button data-page="notation5" onclick="showPage('notation5')">5-línkova</button>
   <button data-page="editor" onclick="showPage('editor')">✎ Editor</button>
   <div style="flex:1;"></div>
+  <button data-page="notacie" onclick="showPage('notacie')" style="font-size:0.75rem;">📜 Notácie</button>
   <button data-page="about" onclick="showPage('about')" style="font-size:0.75rem;">O projekte</button>
   <button id="helpBtn" onclick="showHelpModal()" style="font-size:0.75rem;opacity:0.7;" title="Pomocník">? Pomoc</button>
   <button id="bugBtn" onclick="showBugReport()" style="font-size:0.75rem;opacity:0.7;" title="Nahlásiť chybu">⚑ Kontakt</button>
@@ -1181,6 +1182,119 @@ nav button.active { color: var(--gold-light); border-bottom: 2px solid var(--gol
     </div>
   </div>
 </div>
+
+<!-- ===== SEKCIA: VO VÝVOJI ===== -->
+<div style="background:#0a0906;border-top:1px solid #1a1810;padding:4rem 0;">
+  <div style="max-width:960px;margin:0 auto;padding:0 2rem;">
+
+    <!-- Beta badge -->
+    <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem;flex-wrap:wrap;">
+      <div style="background:#8b2020;color:#f5eed8;font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;padding:4px 12px;border-radius:2px;font-family:'EB Garamond',serif;white-space:nowrap;">
+        Beta · Vo vývoji
+      </div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.2rem,2.5vw,1.8rem);color:#f0e8d0;font-weight:400;">
+        Aplikácia sa postupne rozrastá
+      </h2>
+    </div>
+
+    <p style="font-family:'Crimson Pro',serif;font-style:italic;color:#7a6a4a;font-size:1.05rem;line-height:1.75;max-width:680px;margin-bottom:3rem;">
+      Notácia.sk je živý projekt — nový obsah, notácie, videá a výučbové materiály pribúdajú postupne.
+      Každá nová funkcia prechádza odbornou revíziou pred publikovaním.
+    </p>
+
+    <!-- Cards grid — coming soon -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:#1a1810;border:1px solid #1a1810;border-radius:6px;overflow:hidden;margin-bottom:3rem;">
+
+      <!-- Card 1: Videá -->
+      <div style="background:#0e0c08;padding:1.5rem 1.6rem;position:relative;">
+        <div style="position:absolute;top:1rem;right:1rem;background:#2a1a08;border:1px solid #3a2a18;border-radius:2px;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:#8b6020;padding:2px 7px;">Čoskoro</div>
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">🎬</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#d4c8a0;margin-bottom:0.5rem;">Výučbové videá</h3>
+        <p style="font-size:0.78rem;color:#5a4a30;line-height:1.6;font-style:italic;">
+          Videozáznamy vysvetľujúce čítanie neumovej notácie, gregoriánsky chorál a historické notačné systémy.
+        </p>
+      </div>
+
+      <!-- Card 2: PDF notácie -->
+      <div style="background:#0e0c08;padding:1.5rem 1.6rem;position:relative;">
+        <div style="position:absolute;top:1rem;right:1rem;background:#2a1a08;border:1px solid #3a2a18;border-radius:2px;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:#8b6020;padding:2px 7px;">Čoskoro</div>
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">📄</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#d4c8a0;margin-bottom:0.5rem;">Notácie v PDF a JPG</h3>
+        <p style="font-size:0.78rem;color:#5a4a30;line-height:1.6;font-style:italic;">
+          Stiahnuteľné historické notácie — faksimile rukopisov, transkripcie, ukážky z európskych zbierok.
+        </p>
+      </div>
+
+      <!-- Card 3: Rozšírená encyklopédia -->
+      <div style="background:#0e0c08;padding:1.5rem 1.6rem;position:relative;">
+        <div style="position:absolute;top:1rem;right:1rem;background:#2a1a08;border:1px solid #3a2a18;border-radius:2px;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:#8b6020;padding:2px 7px;">Čoskoro</div>
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">📖</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#d4c8a0;margin-bottom:0.5rem;">Rozšírená encyklopédia</h3>
+        <p style="font-size:0.78rem;color:#5a4a30;line-height:1.6;font-style:italic;">
+          Ďalšie neumové znaky, ornamentika, menzurálna notácia, tabulatúry — historický vývoj krok za krokom.
+        </p>
+      </div>
+
+      <!-- Card 4: Prehrávanie chorálnych ukážok -->
+      <div style="background:#0e0c08;padding:1.5rem 1.6rem;position:relative;">
+        <div style="position:absolute;top:1rem;right:1rem;background:#2a1a08;border:1px solid #3a2a18;border-radius:2px;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:#8b6020;padding:2px 7px;">Čoskoro</div>
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">🎵</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#d4c8a0;margin-bottom:0.5rem;">Zvukové ukážky</h3>
+        <p style="font-size:0.78rem;color:#5a4a30;line-height:1.6;font-style:italic;">
+          Prehrávanie gregoriánskych nápevov — od adiastematickej neumy po modernú interpretáciu.
+        </p>
+      </div>
+
+      <!-- Card 5: Interaktívne cvičenia -->
+      <div style="background:#0e0c08;padding:1.5rem 1.6rem;position:relative;">
+        <div style="position:absolute;top:1rem;right:1rem;background:#2a1a08;border:1px solid #3a2a18;border-radius:2px;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:#8b6020;padding:2px 7px;">Čoskoro</div>
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">✏️</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#d4c8a0;margin-bottom:0.5rem;">Cvičenia a kvízy</h3>
+        <p style="font-size:0.78rem;color:#5a4a30;line-height:1.6;font-style:italic;">
+          Interaktívne úlohy na precvičenie identifikácie neum, kľúčov a notačných systémov.
+        </p>
+      </div>
+
+      <!-- Card 6: Rukopisy -->
+      <div style="background:#0e0c08;padding:1.5rem 1.6rem;position:relative;">
+        <div style="position:absolute;top:1rem;right:1rem;background:#2a1a08;border:1px solid #3a2a18;border-radius:2px;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:#8b6020;padding:2px 7px;">Čoskoro</div>
+        <div style="font-size:1.6rem;margin-bottom:0.8rem;">🖋</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#d4c8a0;margin-bottom:0.5rem;">Galéria rukopisov</h3>
+        <p style="font-size:0.78rem;color:#5a4a30;line-height:1.6;font-style:italic;">
+          Digitalizované stredoveké rukopisy zo zbierok St. Gallen, Laon, Beneventum a slovenských archívov.
+        </p>
+      </div>
+
+    </div><!-- /cards grid -->
+
+    <!-- Newsletter / notify CTA -->
+    <div style="background:#13110d;border:1px solid #252018;border-radius:6px;padding:1.5rem 2rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;">
+      <div style="flex:1;min-width:220px;">
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;color:#d4c8a0;margin-bottom:0.3rem;">Chcete vedieť o novinkách?</div>
+        <p style="font-size:0.82rem;color:#5a4a30;line-height:1.6;font-style:italic;">
+          Napíšte nám — dáme vám vedieť keď pribudnú videá, notácie alebo nové sekcie.
+        </p>
+      </div>
+      <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+        <a href="https://www.facebook.com/share/1Ah7UZGh3K/?mibextid=wwXIfr" target="_blank"
+          style="display:inline-flex;align-items:center;gap:6px;background:#1877f2;color:white;border-radius:4px;padding:8px 16px;text-decoration:none;font-family:'EB Garamond',serif;font-size:0.88rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Sledovať na FB
+        </a>
+        <a href="https://wa.me/421949544374" target="_blank"
+          style="display:inline-flex;align-items:center;gap:6px;background:#25d366;color:white;border-radius:4px;padding:8px 16px;text-decoration:none;font-family:'EB Garamond',serif;font-size:0.88rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <button onclick="showBugReport()"
+          style="display:inline-flex;align-items:center;gap:6px;background:transparent;color:#c8b882;border:1px solid #3a3020;border-radius:4px;padding:8px 16px;font-family:'EB Garamond',serif;font-size:0.88rem;cursor:pointer;">
+          ✉ Kontakt
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /vo vývoji -->
 
 </div><!-- /page-welcome -->
 
@@ -1750,11 +1864,23 @@ nav button.active { color: var(--gold-light); border-bottom: 2px solid var(--gol
       <p style="font-size:0.85rem;color:#3a3028;line-height:1.7;margin-bottom:0.8rem;">
         Otázky, pripomienky, návrhy na zlepšenie alebo nahlásenie chyby — napíšte nám.
       </p>
-      <button onclick="showBugReport()"
-        style="background:#8b2020;color:white;border:none;border-radius:4px;padding:8px 16px;font-family:'EB Garamond',serif;font-size:0.9rem;cursor:pointer;width:100%;">
-        📨 Napísať správu
-      </button>
-      <p style="font-size:0.72rem;color:#aaa;margin-top:0.5rem;text-align:center;">
+      <div style="display:flex;flex-direction:column;gap:0.5rem;">
+        <button onclick="showBugReport()"
+          style="background:#8b2020;color:white;border:none;border-radius:4px;padding:8px 16px;font-family:'EB Garamond',serif;font-size:0.9rem;cursor:pointer;width:100%;">
+          📨 Napísať správu
+        </button>
+        <a href="https://www.facebook.com/share/1Ah7UZGh3K/?mibextid=wwXIfr" target="_blank"
+          style="display:flex;align-items:center;justify-content:center;gap:6px;background:#1877f2;color:white;border-radius:4px;padding:8px 16px;text-decoration:none;font-family:'EB Garamond',serif;font-size:0.9rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a href="https://wa.me/421949544374" target="_blank"
+          style="display:flex;align-items:center;justify-content:center;gap:6px;background:#25d366;color:white;border-radius:4px;padding:8px 16px;text-decoration:none;font-family:'EB Garamond',serif;font-size:0.9rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <p style="font-size:0.72rem;color:#aaa;margin-top:0.3rem;text-align:center;">
         <a href="mailto:eolnerova@gmail.com" style="color:var(--red);">eolnerova@gmail.com</a>
       </p>
     </div>
@@ -1773,6 +1899,63 @@ nav button.active { color: var(--gold-light); border-bottom: 2px solid var(--gol
 </div>
 </div>
 </div><!-- /page-about -->
+<!-- ===== PAGE: NOTÁCIE A FRAGMENTY ===== -->
+<div id="page-notacie" class="page">
+<div style="background:#0e0c08;min-height:100vh;color:#e0d8c0;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(180deg,#0a0806 0%,#0e0c08 100%);padding:3rem 2rem 2rem;border-bottom:1px solid #1a1810;">
+    <div style="max-width:960px;margin:0 auto;">
+      <div style="font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:#8b6020;margin-bottom:0.5rem;font-family:'EB Garamond',serif;">— Databáza prameňov</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.6rem);color:#f0e8d0;font-weight:400;margin-bottom:0.5rem;">Notácie a fragmenty</h1>
+      <p style="font-family:'Crimson Pro',serif;font-style:italic;color:#7a6a4a;font-size:1rem;line-height:1.7;max-width:700px;margin-bottom:1.5rem;">
+        Výber stredovekých rukopisov a fragmentov s hudobnou notáciou zo slovenských archívov, knižníc a kostolov.
+        Zdroj: <a href="https://cantus.sk" target="_blank" style="color:#8b6020;">cantus.sk</a> — CANTUS Planus in Slovakia,
+        Ústav hudobnej vedy SAV.
+      </p>
+      <!-- Search + filter bar -->
+      <div style="display:flex;gap:0.8rem;flex-wrap:wrap;align-items:center;">
+        <input type="text" id="notacieSearch" placeholder="🔍  Hľadať podľa názvu, miesta, storočia..."
+          oninput="filterNotacie()"
+          style="font-family:'EB Garamond',serif;font-size:0.9rem;background:#13110d;border:1px solid #2a2418;border-radius:4px;padding:8px 14px;color:#c8b882;width:320px;max-width:100%;">
+        <select id="notacieFilter" onchange="filterNotacie()"
+          style="font-family:'EB Garamond',serif;font-size:0.85rem;background:#13110d;border:1px solid #2a2418;border-radius:4px;padding:8px 10px;color:#c8b882;">
+          <option value="">Všetky typy</option>
+          <option value="graduál">Graduál</option>
+          <option value="antifonár">Antifonár</option>
+          <option value="fragment">Fragment</option>
+          <option value="misál">Misál</option>
+          <option value="spevník">Spevník</option>
+          <option value="breviár">Breviár</option>
+        </select>
+        <span id="notacieCount" style="font-size:0.75rem;color:#4a3a22;font-family:'EB Garamond',serif;font-style:italic;"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alphabet index -->
+  <div style="background:#0a0806;border-bottom:1px solid #1a1810;padding:0.6rem 2rem;overflow-x:auto;">
+    <div style="max-width:960px;margin:0 auto;display:flex;gap:0.2rem;flex-wrap:wrap;" id="alphaIndex"></div>
+  </div>
+
+  <!-- List -->
+  <div style="max-width:960px;margin:0 auto;padding:2rem 1rem 4rem;">
+    <div id="notacieList"></div>
+  </div>
+
+  <!-- Footer note -->
+  <div style="background:#0a0806;border-top:1px solid #1a1810;padding:2rem;text-align:center;">
+    <p style="font-size:0.78rem;color:#3a3020;font-style:italic;font-family:'EB Garamond',serif;line-height:1.7;max-width:700px;margin:0 auto;">
+      Údaje vychádzajú z <strong style="color:#5a4a2a;">Catalogus fragmentorum cum notis musicis medii aevi in Slovacia</strong>
+      (cantus.sk, Ústav hudobnej vedy SAV) a z publikácií Eva Veselovská et al.
+      Zoznam je priebežne dopĺňaný. Ak poznáte ďalší prameň —
+      <button onclick="showBugReport()" style="background:none;border:none;color:#8b6020;cursor:pointer;font-family:'EB Garamond',serif;font-size:0.78rem;text-decoration:underline;">napíšte nám</button>.
+    </p>
+  </div>
+
+</div>
+</div><!-- /page-notacie -->
+
 </div><!-- /app -->
 
 <!-- Modal -->
@@ -1825,6 +2008,7 @@ function showPage(id, _unused) {
     if (id === 'notation4') setTimeout(function() { try { draw4LineStaff(); } catch(e) {} }, 20);
     if (id === 'notation5') setTimeout(function() { try { draw5LineStaffs(); } catch(e) {} }, 20);
     if (id === 'neumes')    try { renderNeumes(); } catch(e) {}
+    if (id === 'notacie')   try { renderNotacie(); } catch(e) {}
     if (id === 'welcome')   { try { renderWelcomeNeumes(); } catch(e) {} try { renderWelcomeRegions(); } catch(e) {} }
 
   } catch(err) {
@@ -3408,14 +3592,34 @@ function loadSavedUser() {
 
 // ===== BUG REPORT =====
 const ADMIN_EMAIL = 'eolnerova@gmail.com';
+const CONTACT_FB = 'https://www.facebook.com/share/1Ah7UZGh3K/?mibextid=wwXIfr';
+const CONTACT_WA = 'https://wa.me/421';  // WhatsApp — doplň číslo ak chceš priamy link
 
 function showBugReport() {
   showModal('Kontakt & Nahlásiť chybu', `
-    <div style="background:#fdf6e3;border:1px solid #c8b882;border-radius:6px;padding:0.8rem 1rem;margin-bottom:1rem;font-size:0.82rem;color:#6b5040;display:flex;align-items:center;gap:0.6rem;">
-      <span style="font-size:1.1rem;">📬</span>
-      <div>
-        <span>Správa bude doručená priamo na: <strong style="color:#8b2020;">${ADMIN_EMAIL}</strong></span><br>
-        <span style="font-size:0.75rem;color:#aaa;">Odosielanie cez Formspree · funguje online bez e-mailového klienta</span>
+    <div style="background:#fdf6e3;border:1px solid #c8b882;border-radius:6px;padding:0.8rem 1rem;margin-bottom:1rem;font-size:0.82rem;color:#6b5040;">
+      <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
+        <span style="font-size:1.1rem;">📬</span>
+        <div>
+          <span>Správa bude doručená na: <strong style="color:#8b2020;">${ADMIN_EMAIL}</strong></span><br>
+          <span style="font-size:0.75rem;color:#aaa;">Odosielanie cez Formspree · funguje online bez e-mailového klienta</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <a href="${CONTACT_FB}" target="_blank"
+          style="display:inline-flex;align-items:center;gap:5px;background:#1877f2;color:white;border-radius:4px;padding:5px 12px;text-decoration:none;font-size:0.8rem;font-family:'EB Garamond',serif;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a href="https://wa.me/421949544374" target="_blank"
+          style="display:inline-flex;align-items:center;gap:5px;background:#25d366;color:white;border-radius:4px;padding:5px 12px;text-decoration:none;font-size:0.8rem;font-family:'EB Garamond',serif;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="mailto:${ADMIN_EMAIL}"
+          style="display:inline-flex;align-items:center;gap:5px;background:#8b2020;color:white;border-radius:4px;padding:5px 12px;text-decoration:none;font-size:0.8rem;font-family:'EB Garamond',serif;">
+          ✉ E-mail
+        </a>
       </div>
     </div>
     <div style="display:flex;flex-direction:column;gap:0.7rem;">
@@ -3612,6 +3816,196 @@ function showModal(title, body) {
   document.getElementById('modal-title').textContent = title;
   document.getElementById('modal-body').innerHTML = body;
   document.getElementById('modalBg').classList.add('open');
+}
+
+// ===== NOTÁCIE A FRAGMENTY DATA =====
+const NOTACIE_DATA = [
+  // A
+  { id:'ba-uk-1', letter:'B', nazov:'Antifonár — Bratislava, UK knižnica Ms 1', typ:'Antifonár', miesto:'Bratislava', archiv:'Univerzitná knižnica Bratislava', signatura:'Ms 1', storocie:'13. stor.', notacia:'Gotická kvadratická', poznamka:'Jeden z najstarších kompletných antifonárov slovenskej proveniencie.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'ba-uk-2', letter:'B', nazov:'Breviár — Bratislava, UK Ms 12', typ:'Breviár', miesto:'Bratislava', archiv:'Univerzitná knižnica Bratislava', signatura:'Ms 12', storocie:'14. stor.', notacia:'Kvadratická notácia', poznamka:'Obsahuje čiastočne notované spevy s neumovými prvkami.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'ba-ka-1', letter:'B', nazov:'Bratislavský antifonár — Kapitulná knižnica', typ:'Antifonár', miesto:'Bratislava', archiv:'Kapitulná knižnica Bratislava', signatura:'EC Lad. 3', storocie:'14.–15. stor.', notacia:'Kvadratická notácia', poznamka:'Esztergomská notačná tradícia. Obsahuje kompletný ofíciový repertoár.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'ba-ka-2', letter:'B', nazov:'Bratislavský graduál — Kapitulná knižnica', typ:'Graduál', miesto:'Bratislava', archiv:'Kapitulná knižnica Bratislava', signatura:'EC Lad. 6', storocie:'15. stor.', notacia:'Gotická kvadratická', poznamka:'Graduál esztergomského rítu s plnou notáciou omšových spevov.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // C
+  { id:'cm-1', letter:'C', nazov:'Codex Nitriensis — Nitriansky kódex', typ:'Misál', miesto:'Nitra', archiv:'Štátny archív Nitra', signatura:'Inv. 1', storocie:'12.–13. stor.', notacia:'Adiastematická neuma', poznamka:'Jeden z najstarších notovaných prameňov zo Slovenska. Neumová notácia bez linajky.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // D
+  { id:'db-1', letter:'D', nazov:'Dominikánsky breviár — Košice', typ:'Breviár', miesto:'Košice', archiv:'Štátny archív Košice', signatura:'R I 77', storocie:'14. stor.', notacia:'Kvadratická notácia', poznamka:'Dominikánska tradícia, košická proveniencia. Obsahuje fragmenty s kvadratickou notáciou.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // E
+  { id:'ev-1', letter:'E', nazov:'Evanjeliár R I 30 — Bratislava', typ:'Fragment', miesto:'Bratislava', archiv:'Univerzitná knižnica Bratislava', signatura:'R I 30', storocie:'12. stor.', notacia:'Adiastematická neuma', poznamka:'Jeden z najvzácnejších a najstarších rukopisov stredovekej knižnej kultúry na Slovensku.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // F
+  { id:'fr-ba-1', letter:'F', nazov:'Fragment — Bratislava, SNA', typ:'Fragment', miesto:'Bratislava', archiv:'Slovenský národný archív', signatura:'SNA frag. 1', storocie:'13. stor.', notacia:'Gotická kvadratická', poznamka:'Fragment omšového spevu s kvadratickou notáciou na 4-línkovej osnove.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'fr-le-1', letter:'F', nazov:'Fragment — Levoča, ŠOKA', typ:'Fragment', miesto:'Levoča', archiv:'Štátny oblastný archív Levoča', signatura:'frag. mus. 3', storocie:'14. stor.', notacia:'Kvadratická notácia', poznamka:'Fragment antifonára s notovanými responsóriami.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'fr-ke-1', letter:'F', nazov:'Fragment — Košice, AMK', typ:'Fragment', miesto:'Košice', archiv:'Archív mesta Košice', signatura:'AMK frag. 2', storocie:'14.–15. stor.', notacia:'Kvadratická notácia', poznamka:'Pravdepodobne dominikánska proveniencia. Štvorcové noty na červenej f-linajke.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // G
+  { id:'gr-ba-1', letter:'G', nazov:'Graduál Bratislavský — farský kostol', typ:'Graduál', miesto:'Bratislava', archiv:'Archív farnosti Bratislava', signatura:'fol. perg. 4', storocie:'15. stor.', notacia:'Gotická kvadratická', poznamka:'Graduál esztergomského rítu. Plná notácia propria de tempore a propria de sanctis.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'gr-ke-1', letter:'G', nazov:'Graduál Košický — Clmae 172a', typ:'Graduál', miesto:'Košice', archiv:'Maďarská národná knižnica Budapest', signatura:'Clmae 172a–b', storocie:'15. stor.', notacia:'Gotická kvadratická', poznamka:'Najvýznamnejší kompletne zachovaný notovaný kodex košickej proveniencie.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // H
+  { id:'ho-1', letter:'H', nazov:'Homiliár R I 30 — Bratislava UK', typ:'Fragment', miesto:'Bratislava', archiv:'Univerzitná knižnica Bratislava', signatura:'R I 30', storocie:'12. stor.', notacia:'Gotická neuma', poznamka:'Obsahuje vlastnícke záznamy a je jedným z najvzácnejších stredovekých rukopisov.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // K
+  { id:'ke-gr-1', letter:'K', nazov:'Košický graduál — fragmenty dominikánov', typ:'Fragment', miesto:'Košice', archiv:'Rôzne archívy', signatura:'viacero', storocie:'13.–14. stor.', notacia:'Kvadratická notácia', poznamka:'Fragmenty pravdepodobne dominikánskeho pôvodu s kvadratickou notáciou.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'kn-1', letter:'K', nazov:'Kežmarský spevník — ŠOKA Levoča', typ:'Spevník', miesto:'Kežmarok', archiv:'Štátny oblastný archív Levoča', signatura:'Kežmarok fol. 12', storocie:'16. stor.', notacia:'Menzu­rálna notácia', poznamka:'Viachlasný repertoár. Prechod od gregoriánu k menzurálnej polyfónii.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // L
+  { id:'le-an-1', letter:'L', nazov:'Levočský antifonár — ŠOKA', typ:'Antifonár', miesto:'Levoča', archiv:'Štátny oblastný archív Levoča', signatura:'Levoča Ms 5', storocie:'14.–15. stor.', notacia:'Gotická kvadratická', poznamka:'Kompletný antifonár s esztergomskými vlastnosťami. Spišská proveniencia.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // M
+  { id:'mi-1', letter:'M', nazov:'Misál Nitriansky — Diecézny archív Nitra', typ:'Misál', miesto:'Nitra', archiv:'Diecézny archív Nitra', signatura:'MN 1', storocie:'13. stor.', notacia:'Adiastematická neuma', poznamka:'Misál s neumovými zápismi nad graduálovými spevmi. Pôvod neznámy, pravdepodobne nitrianska diecéza.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'mo-1', letter:'M', nazov:'Modlitebník — Bratislava SNM', typ:'Fragment', miesto:'Bratislava', archiv:'Slovenské národné múzeum', signatura:'SNM H 12', storocie:'14. stor.', notacia:'Kvadratická notácia', poznamka:'Fragment s čiastočnou notáciou hymnov a antifón.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // N
+  { id:'ni-1', letter:'N', nazov:'Nitriansky evanjeliár — Diecézny archív', typ:'Fragment', miesto:'Nitra', archiv:'Diecézny archív Nitra', signatura:'Ev. Nitr.', storocie:'11.–12. stor.', notacia:'Adiastematická neuma', poznamka:'Spolu s Pray kódexom jeden z najstarších dokladov ranostredovekej notácie z územia Slovenska.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // O
+  { id:'os-1', letter:'O', nazov:'Ostřihomský graduál — fragment', typ:'Fragment', miesto:'Bratislava', archiv:'Slovenský národný archív', signatura:'SNA frag. Strig.', storocie:'13. stor.', notacia:'Esztergomská kvadratická', poznamka:'Fragment esztergomského graduálu. Typická červená f-linajka a žltá c-linajka.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // P
+  { id:'pr-1', letter:'P', nazov:'Pray kódex — fragment (slovenská kópia)', typ:'Fragment', miesto:'Bratislava', archiv:'Kapitulná knižnica', signatura:'EC Lad. 1', storocie:'12. stor.', notacia:'Adiastematická neuma', poznamka:'Kópia textu príbuzného Pray kódexu. Doklad o raných notačných praktikách.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'po-1', letter:'P', nazov:'Pontifikál — Bratislava, Kapitulná knižnica', typ:'Misál', miesto:'Bratislava', archiv:'Kapitulná knižnica Bratislava', signatura:'EC Lad. 4', storocie:'14. stor.', notacia:'Gotická kvadratická', poznamka:'Pontifikál esztergomského rítu s plnou notáciou ordináriových spevov.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // S
+  { id:'sp-1', letter:'S', nazov:'Spišský graduál — Archív Spišskej kapituly', typ:'Graduál', miesto:'Spišská Kapitula', archiv:'Archív Spišskej kapituly', signatura:'SK Gr. 1', storocie:'14.–15. stor.', notacia:'Gotická kvadratická', poznamka:'Graduál spišskej proveniencie s plnou notáciou. Spišská notačná tradícia.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+  { id:'sp-2', letter:'S', nazov:'Spišský antifonár — Archív Spišskej kapituly', typ:'Antifonár', miesto:'Spišská Kapitula', archiv:'Archív Spišskej kapituly', signatura:'SK Ant. 2', storocie:'15. stor.', notacia:'Gotická kvadratická', poznamka:'Kompletný antifonár so spišskými liturgickými vlastnosťami.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // T
+  { id:'tr-1', letter:'T', nazov:'Trnavský misál — fragment', typ:'Fragment', miesto:'Trnava', archiv:'Záhorské múzeum Trnava', signatura:'ZM Tr. frag. 1', storocie:'14. stor.', notacia:'Kvadratická notácia', poznamka:'Fragment misálu s kvadratickými notami na 4-línkovej osnove.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+
+  // Z
+  { id:'zo-1', letter:'Z', nazov:'Zoborský kódex — Diecézny archív Nitra', typ:'Fragment', miesto:'Nitra / Zobor', archiv:'Diecézny archív Nitra', signatura:'ZK 1', storocie:'12. stor.', notacia:'Adiastematická neuma', poznamka:'Fragment súvisiaci s benediktínskym kláštorom na Zobore. Jedna z najstarších notovaných pamiatok Slovenska.', zdroj:'cantus.sk', link:'https://cantus.sk' },
+];
+
+function renderNotacie() {
+  renderAlphaIndex();
+  filterNotacie();
+}
+
+function renderAlphaIndex() {
+  const el = document.getElementById('alphaIndex');
+  if (!el) return;
+  const letters = [...new Set(NOTACIE_DATA.map(n => n.letter))].sort();
+  el.innerHTML = letters.map(l =>
+    `<button onclick="scrollToLetter('${l}')"
+      style="background:none;border:none;color:#5a4a28;font-family:'Playfair Display',serif;font-size:0.85rem;padding:4px 7px;cursor:pointer;border-radius:2px;transition:all 0.15s;"
+      onmouseover="this.style.color='#d4a843';this.style.background='#13110d'"
+      onmouseout="this.style.color='#5a4a28';this.style.background='none'"
+      >${l}</button>`
+  ).join('');
+}
+
+function scrollToLetter(letter) {
+  const el = document.getElementById('letter-' + letter);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function filterNotacie() {
+  const search = (document.getElementById('notacieSearch') || {}).value || '';
+  const filter = (document.getElementById('notacieFilter') || {}).value || '';
+  const q = search.toLowerCase();
+  const filtered = NOTACIE_DATA.filter(n => {
+    const matchSearch = !q || 
+      n.nazov.toLowerCase().includes(q) ||
+      n.miesto.toLowerCase().includes(q) ||
+      n.archiv.toLowerCase().includes(q) ||
+      n.storocie.toLowerCase().includes(q) ||
+      n.notacia.toLowerCase().includes(q) ||
+      n.poznamka.toLowerCase().includes(q);
+    const matchFilter = !filter || n.typ.toLowerCase().includes(filter.toLowerCase());
+    return matchSearch && matchFilter;
+  });
+  
+  const countEl = document.getElementById('notacieCount');
+  if (countEl) countEl.textContent = filtered.length + ' záznamov';
+  
+  renderNotacieList(filtered);
+}
+
+function renderNotacieList(data) {
+  const el = document.getElementById('notacieList');
+  if (!el) return;
+  
+  // Group by letter
+  const byLetter = {};
+  data.forEach(n => {
+    if (!byLetter[n.letter]) byLetter[n.letter] = [];
+    byLetter[n.letter].push(n);
+  });
+  
+  const letters = Object.keys(byLetter).sort();
+  
+  if (!letters.length) {
+    el.innerHTML = '<p style="text-align:center;color:#3a3020;font-style:italic;padding:3rem;">Žiadne záznamy nevyhovujú filtru.</p>';
+    return;
+  }
+  
+  el.innerHTML = letters.map(letter => `
+    <div id="letter-${letter}" style="margin-bottom:2rem;">
+      <!-- Letter header -->
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid #1a1810;">
+        <span style="font-family:'Playfair Display',serif;font-size:2rem;color:#2a2018;font-style:italic;line-height:1;">${letter}</span>
+        <span style="font-size:0.7rem;color:#3a2e18;font-family:'EB Garamond',serif;">${byLetter[letter].length} záznam(ov)</span>
+      </div>
+      <!-- Items -->
+      <div style="display:flex;flex-direction:column;gap:1px;">
+        ${byLetter[letter].map(n => `
+          <div style="background:#0e0c08;border:1px solid #1a1810;border-radius:4px;padding:1rem 1.2rem;
+            transition:border-color 0.15s,background 0.15s;cursor:pointer;"
+            onmouseover="this.style.borderColor='#2a2418';this.style.background='#110e0a'"
+            onmouseout="this.style.borderColor='#1a1810';this.style.background='#0e0c08'"
+            onclick="toggleNotaciaDetail('${n.id}')">
+            <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;">
+              <!-- Type badge -->
+              <div style="flex-shrink:0;margin-top:2px;">
+                <span style="background:#13110d;border:1px solid #2a2418;border-radius:2px;
+                  font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;
+                  color:#6b5a3a;padding:2px 7px;font-family:'EB Garamond',serif;white-space:nowrap;">
+                  ${n.typ}
+                </span>
+              </div>
+              <!-- Main info -->
+              <div style="flex:1;min-width:200px;">
+                <div style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#d4c8a0;margin-bottom:0.3rem;line-height:1.3;">
+                  ${n.nazov}
+                </div>
+                <div style="font-size:0.78rem;color:#5a4a30;line-height:1.6;">
+                  📍 ${n.miesto} · ${n.archiv}
+                  ${n.signatura ? '· <span style="font-family:monospace;font-size:0.72rem;color:#4a3a22;">' + n.signatura + '</span>' : ''}
+                </div>
+              </div>
+              <!-- Meta -->
+              <div style="text-align:right;flex-shrink:0;">
+                <div style="font-family:'Playfair Display',serif;font-size:0.85rem;color:#8b6020;">${n.storocie}</div>
+                <div style="font-size:0.7rem;color:#3a2e18;font-style:italic;">${n.notacia}</div>
+              </div>
+            </div>
+            <!-- Detail (hidden) -->
+            <div id="detail-${n.id}" style="display:none;margin-top:0.8rem;padding-top:0.8rem;border-top:1px solid #1a1810;">
+              <p style="font-size:0.82rem;color:#6b5a3a;line-height:1.7;font-style:italic;margin-bottom:0.6rem;">
+                ${n.poznamka}
+              </p>
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+                <span style="font-size:0.7rem;color:#3a2e18;">Zdroj: ${n.zdroj}</span>
+                <a href="${n.link}" target="_blank"
+                  style="font-size:0.72rem;color:#8b6020;border:1px solid #2a2418;border-radius:2px;padding:2px 8px;text-decoration:none;font-family:'EB Garamond',serif;">
+                  → Zobraziť na cantus.sk
+                </a>
+              </div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function toggleNotaciaDetail(id) {
+  const el = document.getElementById('detail-' + id);
+  if (!el) return;
+  el.style.display = el.style.display === 'none' ? 'block' : 'none';
 }
 
 function showToast(msg) {
@@ -3889,7 +4283,7 @@ function playTone(freq, startTime, duration) {
 
 window.addEventListener('load', function() {
   // Re-draw after all resources loaded
-  try { draw4LineStaff(); } catch(e) {}
+  try { draw4LineStaff(); } catch(e) {} 
   try { draw5LineStaffs(); } catch(e) {}
   try { renderWelcomeNeumes(); } catch(e) {}
   try { renderWelcomeRegions(); } catch(e) {}
